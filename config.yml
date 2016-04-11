@@ -1,0 +1,7 @@
+name: カスタマーログインプラグイン
+code: CustomerLogin
+version: 1.0.0
+service:
+ - CustomerLoginServiceProvider
+orm.path:
+ - /Resource/doctrine
