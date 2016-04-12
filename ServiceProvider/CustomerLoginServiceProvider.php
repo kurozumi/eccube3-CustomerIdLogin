@@ -59,7 +59,7 @@ class CustomerLoginServiceProvider implements ServiceProviderInterface
                     'always_remember_me' => false,
                     'remember_me_parameter' => 'login_memory',
                 ),
-                'users' => $app['orm.em']->getRepository('Plugin\Customerlogin\Entity\Customer'),
+                'users' => $app['orm.em']->getRepository('Plugin\CustomerLogin\Entity\Customer'),
                 'anonymous' => true,
             ),
         );
