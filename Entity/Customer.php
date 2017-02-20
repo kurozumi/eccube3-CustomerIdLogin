@@ -1,5 +1,5 @@
 <?php
-namespace Plugin\CustomerLogin\Entity;
+namespace Plugin\CustomerIdLogin\Entity;
 
 use Eccube\Entity\Customer as BaseCustomer;
 /**

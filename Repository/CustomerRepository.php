@@ -1,5 +1,5 @@
 <?php
-namespace Plugin\CustomerLogin\Repository;
+namespace Plugin\CustomerIdLogin\Repository;
 
 use Eccube\Repository\CustomerRepository as BaseRepository;
 use Eccube\Entity\Master\CustomerStatus;
@@ -10,6 +10,8 @@ class CustomerRepository extends BaseRepository
 {
     public function loadUserByUsername($username)
     {
+        die("die");
+        
         // 本会員ステータスの会員のみ有効.
         $CustomerStatus = $this
             ->getEntityManager()

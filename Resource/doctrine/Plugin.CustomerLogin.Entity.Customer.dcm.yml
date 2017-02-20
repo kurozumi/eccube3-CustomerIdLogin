@@ -1,4 +1,0 @@
-Plugin\CustomerLogin\Entity\Customer:
-  type: entity
-  table: dtb_customer
-  repositoryClass: Plugin\CustomerLogin\Repository\CustomerRepository

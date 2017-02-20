@@ -1,11 +1,11 @@
 <?php
-namespace Plugin\CustomerLogin\ServiceProvider;
+namespace Plugin\CustomerIdLogin\ServiceProvider;
 
 use Eccube\Application;
 use Silex\Application as BaseApplication;
 use Silex\ServiceProviderInterface;
 
-class CustomerLoginServiceProvider implements ServiceProviderInterface
+class CustomerIdLoginServiceProvider implements ServiceProviderInterface
 {
 
     /**
@@ -59,7 +59,7 @@ class CustomerLoginServiceProvider implements ServiceProviderInterface
                     'always_remember_me' => false,
                     'remember_me_parameter' => 'login_memory',
                 ),
-                'users' => $app['orm.em']->getRepository('Plugin\CustomerLogin\Entity\Customer'),
+                'users' => $app['orm.em']->getRepository('Plugin\CustomerIdLogin\Entity\Customer'),
                 'anonymous' => true,
             ),
         );

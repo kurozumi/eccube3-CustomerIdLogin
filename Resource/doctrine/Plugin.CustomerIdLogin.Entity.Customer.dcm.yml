@@ -1,0 +1,4 @@
+Plugin\CustomerIdLogin\Entity\Customer:
+  type: entity
+  table: dtb_customer
+  repositoryClass: Plugin\CustomerIdLogin\Repository\CustomerRepository
